@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KHU PHỐ CHILL - Thế Giới Phim Trực Tuyến</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        chill: { red: '#E50914', dark: '#0b0f19', card: '#131b2e', gray: '#1e293b' }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-chill-dark text-white min-h-screen font-sans selection:bg-chill-red selection:text-white">
+
+    <!-- HEADER -->
+    <header class="sticky top-0 z-50 bg-chill-dark/95 backdrop-blur-md border-b border-chill-gray/50 px-4 py-3">
+        <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+            <div class="flex items-center gap-3 cursor-pointer" onclick="location.reload()">
+                <div class="bg-gradient-to-tr from-red-600 to-chill-red text-white p-2 rounded-xl font-black text-xl flex items-center justify-center shadow-lg shadow-chill-red/40">
+                    <i class="fa-solid fa-clapperboard"></i>
+                </div>
+                <div>
+                    <h1 class="text-xl font-extrabold tracking-wider text-white">KHUPHO<span class="text-chill-red">CHILL</span></h1>
+                    <p class="text-[10px] text-gray-400 tracking-widest uppercase">Khu Phố Chill</p>
+                </div>
+            </div>
+            
+            <div class="flex items-center gap-3">
+                <button onclick="alert('Hệ thống tìm kiếm đang sẵn sàng!')" class="bg-chill-card border border-gray-700 p-2.5 rounded-full text-gray-300 hover:text-white transition">
+                    <i class="fa-solid fa-magnifying-glass text-sm"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="max-w-7xl mx-auto px-4 py-6">
+        <!-- BANNER -->
+        <div class="mb-8 rounded-2xl overflow-hidden relative shadow-2xl bg-gradient-to-r from-red-950 via-chill-card to-chill-dark p-6 sm:p-10 border border-chill-gray">
+            <div class="max-w-xl relative z-10">
+                <span class="bg-chill-red text-white text-xs font-bold px-3 py-1 rounded-full mb-3 inline-block shadow-md">ĐỀ XUẤT HOT</span>
+                <h2 class="text-2xl sm:text-4xl font-black mb-3 text-white">Thế Giới Hoàn Mỹ</h2>
+                <p class="text-xs sm:text-sm text-gray-300 mb-5 leading-relaxed">Hành trình tu chân đỉnh cao, thưởng thức trọn vẹn những bộ phim hot nhất chất lượng cao.</p>
+                <button onclick="alert('Đang phát phim: Thế Giới Hoàn Mỹ')" class="bg-chill-red hover:bg-red-700 text-white px-6 py-3 rounded-xl font-bold text-sm flex items-center gap-2 transition shadow-lg shadow-chill-red/40">
+                    <i class="fa-solid fa-play"></i> Xem Ngay
+                </button>
+            </div>
+        </div>
+
+        <!-- DANH SÁCH PHIM -->
+        <div class="flex items-center justify-between mb-5">
+            <h2 class="text-lg font-bold border-l-4 border-chill-red pl-3 text-white">Phim Mới Cập Nhật</h2>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+            <div class="bg-chill-card rounded-2xl overflow-hidden border border-chill-gray hover:border-chill-red transition group cursor-pointer shadow-lg" onclick="alert('Đang phát: Thế Giới Hoàn Mỹ')">
+                <div class="aspect-[2/3] relative bg-chill-gray overflow-hidden">
+                    <img src="https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    <span class="absolute bottom-2 left-2 bg-black/80 backdrop-blur text-[10px] px-2.5 py-1 rounded-lg text-chill-red font-bold">Tập 135</span>
+                </div>
+                <div class="p-3">
+                    <h3 class="font-semibold text-sm truncate text-white">Thế Giới Hoàn Mỹ</h3>
+                    <p class="text-xs text-gray-400 mt-1">Viễn Tưởng • 2026</p>
+                </div>
+            </div>
+
+            <div class="bg-chill-card rounded-2xl overflow-hidden border border-chill-gray hover:border-chill-red transition group cursor-pointer shadow-lg" onclick="alert('Đang phát: Đấu Phá Thương Khung')">
+                <div class="aspect-[2/3] relative bg-chill-gray overflow-hidden">
+                    <img src="https://image.tmdb.org/t/p/w500/6MKr3KgOLmzOP6MSuZERO41Lpkt.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    <span class="absolute bottom-2 left-2 bg-black/80 backdrop-blur text-[10px] px-2.5 py-1 rounded-lg text-chill-red font-bold">Tập 102</span>
+                </div>
+                <div class="p-3">
+                    <h3 class="font-semibold text-sm truncate text-white">Đấu Phá Thương Khung</h3>
+                    <p class="text-xs text-gray-400 mt-1">Hành Động • 2026</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="text-center py-8 text-xs text-gray-500 border-t border-chill-gray/50 mt-12 bg-chill-dark">
+        <p class="font-bold text-gray-300">KHUPHOCHILL - Nền Tảng Giải Trí Trực Tuyến</p>
+        <p class="mt-1">© 2026 Khu Phố Chill. Mọi quyền được bảo lưu.</p>
+    </footer>
+</body>
+</html>
+  
